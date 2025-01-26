@@ -1,67 +1,67 @@
  #include<stdio.h> 
  //1
-// int main() {
-//     int temp[7]; 
-//     int sum=0; float avg; 
-//     printf("Enter the temperatures of last 7 days\n"); 
-//     for (int i=0; i<7; i++) {
-//         printf("Enter the day %d temperature", i+1); 
-//         scanf("%d", &temp[i]); 
-//     }
-//     for (int i=0; i<7; i++) {
-//          sum+= temp[i]; 
-//     }
-//     avg= (float)sum/7; 
-//     printf("The average temperature is %0.2f", avg); 
-//     return 0; 
-// }
+int main() {
+    int temp[7]; 
+    int sum=0; float avg; 
+    printf("Enter the temperatures of last 7 days\n"); 
+    for (int i=0; i<7; i++) {
+        printf("Enter the day %d temperature", i+1); 
+        scanf("%d", &temp[i]); 
+    }
+    for (int i=0; i<7; i++) {
+         sum+= temp[i]; 
+    }
+    avg= (float)sum/7; 
+    printf("The average temperature is %0.2f", avg); 
+    return 0; 
+}
 
 //2 
-// int main() {
-//     int n, sum=0, count=0; 
-//     printf("Enter how many ages do you input.\n"); 
-//     scanf("%d", &n); 
-//     int age[n]; 
-//     printf("Enter the ages : "); 
-//     for (int i=0; i<n; i++) {
-//         scanf("%d", &age[i]); 
-//     }
-//     int avg; 
-//     for(int i=0; i<n; i++) {
-//         sum+= age[i]; 
-//     }
-//     avg = sum/n; 
-//     printf("The average age is %d\n", avg); 
-//     for(int i=0; i<n; i++){
-//         if(age[i]> avg) {
-//             count++; 
-//         }
-//     }
+int main() {
+    int n, sum=0, count=0; 
+    printf("Enter how many ages do you input.\n"); 
+    scanf("%d", &n); 
+    int age[n]; 
+    printf("Enter the ages : "); 
+    for (int i=0; i<n; i++) {
+        scanf("%d", &age[i]); 
+    }
+    int avg; 
+    for(int i=0; i<n; i++) {
+        sum+= age[i]; 
+    }
+    avg = sum/n; 
+    printf("The average age is %d\n", avg); 
+    for(int i=0; i<n; i++){
+        if(age[i]> avg) {
+            count++; 
+        }
+    }
 
-//     count>0?printf("There are %d person who are older than average age", count): 
-//     printf("There are no person who are older than average age"); 
-//     return 0; 
-// }
+    count>0?printf("There are %d person who are older than average age", count): 
+    printf("There are no person who are older than average age"); 
+    return 0; 
+}
 //3
-// int main() {
-//     int n, sum=0, count=0; 
-//     printf("Enter how many ages do you input.\n"); 
-//     scanf("%d", &n); 
-//     int age[n]; 
-//     printf("Enter the ages : "); 
-//     for (int i=0; i<n; i++) {
-//         scanf("%d", &age[i]); 
-//     }
-//     for(int i=0; i<n; i++){
-//         if(age[i]>= 13 && age[i]<=19) {
-//             count++; 
-//         }
-//     }
+int main() {
+    int n, sum=0, count=0; 
+    printf("Enter how many ages do you input.\n"); 
+    scanf("%d", &n); 
+    int age[n]; 
+    printf("Enter the ages : "); 
+    for (int i=0; i<n; i++) {
+        scanf("%d", &age[i]); 
+    }
+    for(int i=0; i<n; i++){
+        if(age[i]>= 13 && age[i]<=19) {
+            count++; 
+        }
+    }
 
-//     count>0?printf("There are %d person who are teenagers", count): 
-//     printf("There are no person who are teenagers"); 
-//     return 0; 
-// }
+    count>0?printf("There are %d person who are teenagers", count): 
+    printf("There are no person who are teenagers"); 
+    return 0; 
+}
 
 //4
 int main() {
